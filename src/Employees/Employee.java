@@ -1,3 +1,5 @@
+package Employees;
+
 import Animals.Enclosure;
 
 public abstract class Employee {
@@ -8,5 +10,5 @@ public abstract class Employee {
         this.name = name;
         this.job = job;
     }
-    public void work(){}
+    public void work(Enclosure enclosure){}
 }

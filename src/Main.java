@@ -1,4 +1,8 @@
 import Animals.*;
+import Employees.Job;
+import Employees.Vet;
+import Employees.Warden;
+import Visitors.Visitor;
 
 public class Main {
     public static void main(String[] args) {
@@ -21,6 +25,13 @@ public class Main {
         Warden warden1 = new Warden("Джон", Job.WARDEN);
         warden1.work(enclosure1);
         System.out.println(enclosure1);
+
+        Vet vet1 = new Vet("Быков", Job.VET);
+        vet1.work(enclosure1);
+
+
+        Visitor visitor1 = new Visitor("Леша", 21);
+        visitor1.watch_animals(enclosure1);
 
     }
 }

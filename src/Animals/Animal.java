@@ -53,7 +53,7 @@ public abstract class Animal {
         this.hp = 100;
     }
 
-    public void make_sound(){}
+    public abstract void make_sound();
 
     @Override
     public String toString() {

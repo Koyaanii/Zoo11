@@ -1,14 +1,15 @@
+package Employees;
+
 import Animals.Animal;
 import Animals.Enclosure;
 
 import java.util.LinkedList;
-import java.util.List;
 
 public class Warden extends Employee {
     public Warden(String name, Job job) {
         super(name, job);
     }
-
+    @Override
     public void work(Enclosure enclosure) {
         if (enclosure.getLinkedList() != null) {
             LinkedList<Animal> list = enclosure.getLinkedList();
