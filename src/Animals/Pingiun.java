@@ -6,7 +6,8 @@ public class Pingiun extends Animal {
     }
 
     @Override
-    public void make_sound() {
-        System.out.println("кря кря");
+    public String make_sound() {
+
+        return "кря кря";
     }
 }

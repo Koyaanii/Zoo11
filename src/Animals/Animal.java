@@ -45,15 +45,24 @@ public abstract class Animal {
         this.hungry = hungry;
     }
 
-    public void eat(){
+    public void eat() {
         this.hungry = 100;
     }
 
-    public void sleep(){
+    public void sleep() {
         this.hp = 100;
     }
 
-    public abstract void make_sound();
+    public Boolean isSick() {
+        return hp <= 20;
+    }
+
+    public Boolean isHungry() {
+        return hungry <= 35;
+    }
+
+
+    public abstract String make_sound();
 
     @Override
     public String toString() {

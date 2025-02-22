@@ -1,6 +1,10 @@
 package Visitors;
 
+import Animals.Animal;
 import Animals.Enclosure;
+import Employees.Vet;
+
+import java.util.LinkedList;
 
 public class Visitor {
     private String name;
@@ -12,9 +16,21 @@ public class Visitor {
         this.age = age;
         this.tiket = false;
     }
-    public void watch_animals(Enclosure enclosure){
-        System.out.println("Посетитель " + name + " наблюдает за животными в вольере номер " + enclosure.getId() + ", он видит " +
-             enclosure.getLinkedList() + ".");
+
+    public void watch_animals(Enclosure enclosure) {
+        LinkedList<Animal> listAnimals = enclosure.getLinkedList();
+        System.out.println("Посетитель " + name + " наблюдает за животными в вольере номер " + enclosure.getId() + ", он видит: ");
+        for (Animal animal : listAnimals) {
+            System.out.println(animal.getName());
+            if (animal.isSick()) {
+                System.out.println("Кажется животному " + animal.getName() + " не здороится, ему нужен ветеринар.");
+
+            } else {
+                System.out.println("От него слышно: " + animal.make_sound() + ".");
+            }
+
+        }
+        System.out.println();
     }
 
     public String getName() {

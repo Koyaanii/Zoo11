@@ -7,7 +7,7 @@ public class Slon extends Animal {
     }
 
     @Override
-    public void make_sound() {
-        System.out.println("bahruuuuuuhhhhaaaaa");
+    public String make_sound() {
+        return  "bahruuuuuuhhhhaaaaa";
     }
 }
