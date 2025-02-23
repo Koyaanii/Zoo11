@@ -1,7 +1,7 @@
 package Employees;
 
 import Animals.Animal;
-import Animals.Enclosure;
+import Cage.Enclosure;
 
 import java.util.LinkedList;
 

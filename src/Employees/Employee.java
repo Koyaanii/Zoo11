@@ -1,6 +1,6 @@
 package Employees;
 
-import Animals.Enclosure;
+import Cage.Enclosure;
 
 public abstract class Employee {
     private String name;

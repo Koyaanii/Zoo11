@@ -1,5 +1,5 @@
 
-import Animals.Enclosure;
+import Cage.Enclosure;
 import Employees.Employee;
 import Visitors.Visitor;
 

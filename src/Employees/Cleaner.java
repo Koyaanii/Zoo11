@@ -1,6 +1,6 @@
 package Employees;
 
-import Animals.Enclosure;
+import Cage.Enclosure;
 
 public class Cleaner extends Employee {
     public Cleaner(String name, Job job) {

@@ -1,4 +1,8 @@
-import Animals.*;
+import Animals.Bird.Pingiun;
+import Animals.Mammals.Lion;
+import Animals.Mammals.Slon;
+import Cage.Enclosure;
+import Cage.Size;
 import Employees.Cleaner;
 import Employees.Job;
 import Employees.Vet;
@@ -21,17 +25,18 @@ public class Main {
 
         Enclosure enclosure1 = new Enclosure(1, Size.SMALL);
         Enclosure enclosure2 = new Enclosure(2, Size.MEDIUM);
-        Enclosure enclosure3 = new Enclosure(3, Size.BIG);
+        Enclosure enclosure3 = new Enclosure(3, Size.LARGE);
+
         
-        enclosure1.add_animal(lion1);
-        enclosure1.add_animal(slon1);
-        enclosure2.add_animal(pingiun1);
-        enclosure2.add_animal(pingiun2);
-        enclosure2.add_animal(pingiun3);
-        enclosure3.add_animal(lion2);
-        enclosure3.add_animal(lion3);
-        enclosure3.add_animal(slon2);
-        enclosure3.add_animal(slon3);
+        enclosure1.add_mammal(lion1);
+        enclosure1.add_mammal(slon1);
+        enclosure2.add_mammal(pingiun1);
+        enclosure2.add_mammal(pingiun2);
+        enclosure2.add_mammal(pingiun3);
+        enclosure3.add_mammal(lion2);
+        enclosure3.add_mammal(lion3);
+        enclosure3.add_mammal(slon2);
+        enclosure3.add_mammal(slon3);
 
         lion2.setHp(12);
 

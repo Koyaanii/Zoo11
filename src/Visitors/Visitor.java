@@ -1,8 +1,7 @@
 package Visitors;
 
 import Animals.Animal;
-import Animals.Enclosure;
-import Employees.Vet;
+import Cage.Enclosure;
 
 import java.util.LinkedList;
 
@@ -24,7 +23,6 @@ public class Visitor {
             System.out.println(animal.getName());
             if (animal.isSick()) {
                 System.out.println("Кажется животному " + animal.getName() + " не здороится, ему нужен ветеринар.");
-
             } else {
                 System.out.println("От него слышно: " + animal.make_sound() + ".");
             }

@@ -1,9 +1,9 @@
-package Animals;
+package Cage;
 
 public enum Size {
     SMALL(2),
     MEDIUM(4),
-    BIG(8);
+    LARGE(8);
 
     private final int value;
 

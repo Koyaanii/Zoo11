@@ -1,6 +1,6 @@
-package Animals;
+package Animals.Mammals;
 
-public class Lion extends Animal {
+public class Lion extends Mammal {
     public Lion(String name, int year) {
         super(name, year);
     }
